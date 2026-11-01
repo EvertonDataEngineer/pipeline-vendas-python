@@ -23,3 +23,38 @@ Este projeto consiste em um pipeline de dados automatizado e *headless* (sem int
 ```bash
 git clone [https://github.com/EvertonDataEngineer/pipeline-vendas-python.git](https://github.com/EvertonDataEngineer/pipeline-vendas-python.git)
 cd pipeline-vendas-python
+
+### 2. Configurar o Ambiente Virtual
+
+python -m venv venv
+
+# Windows
+.\venv\Scripts\activate
+
+# Linux/macOS
+source venv/bin/activate
+
+### 3. Instalar as Dependências
+
+pip install pandas gdown openpyxl
+
+### 4. Configurar as Variáveis de Ambiente
+
+No arquivo principal, configure as seguintes variáveis:
+
+EMAIL_REMETENTE: Seu e-mail do Gmail.
+
+EMAIL_SENHA: Sua Senha de Aplicativo gerada no painel de segurança do Google (nunca utilize sua senha padrão).
+
+DRIVE_FILE_ID: O ID único do arquivo .xlsx armazenado no Google Drive.
+
+### 5. Executar o Pipeline
+
+Com o ambiente ativado, rode o script através do terminal:
+python pipeline.py
+
+
+👨‍💻 Autor
+Everton Silva (Tom)
+
+Estudante de Data Science na FIAP | Foco em Engenharia de Dados e Cloud Computing
