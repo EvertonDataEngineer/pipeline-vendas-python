@@ -1,0 +1,10 @@
+# Ignora ambientes virtuais e dependências
+venv/
+__pycache__/
+
+# Ignora dados sensíveis e temporários
+*.xlsx
+*.csv
+
+# Ignora variáveis de ambiente (onde ficam senhas)
+.env
