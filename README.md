@@ -23,21 +23,23 @@ Este projeto consiste em um pipeline de dados automatizado e *headless* (sem int
 ```bash
 git clone [https://github.com/EvertonDataEngineer/pipeline-vendas-python.git](https://github.com/EvertonDataEngineer/pipeline-vendas-python.git)
 cd pipeline-vendas-python
-
+```
 ### 2. Configurar o Ambiente Virtual
-
+```bash
 python -m venv venv
-
+```
 # Windows
+```bash
 .\venv\Scripts\activate
-
+```
 # Linux/macOS
+```bash
 source venv/bin/activate
-
+```
 ### 3. Instalar as Dependências
-
+```bash
 pip install pandas gdown openpyxl
-
+```
 ### 4. Configurar as Variáveis de Ambiente
 
 No arquivo principal, configure as seguintes variáveis:
@@ -51,8 +53,9 @@ DRIVE_FILE_ID: O ID único do arquivo .xlsx armazenado no Google Drive.
 ### 5. Executar o Pipeline
 
 Com o ambiente ativado, rode o script através do terminal:
+```bash
 python pipeline.py
-
+```
 
 👨‍💻 Autor
 Everton Silva (Tom)
